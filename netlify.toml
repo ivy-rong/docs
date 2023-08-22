@@ -11,5 +11,5 @@
 
 [[redirects]]
   from = "/guide/*"
-  status = 200
   to = "/guide/index.html"
+  status = 200
