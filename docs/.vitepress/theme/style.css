@@ -89,7 +89,29 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
-body {
+/* body {
   background-image: url('/public/bg-dark.jpg');
   background-size: 100% auto;
+} */
+
+/* 定义滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 轨道背景色 */
+}
+
+/* 定义滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* 滑块背景色 */
+  border-radius: 5px; /* 滑块边框圆角 */
+}
+
+/* 鼠标悬停在滚动条上时的样式 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* 悬停时滑块背景色 */
+}
+
+/* 定义滚动条的尺寸 */
+::-webkit-scrollbar {
+  width: 10px; /* 垂直滚动条宽度 */
+  height: 10px; /* 水平滚动条高度 */
 }

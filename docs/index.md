@@ -1,14 +1,15 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
+layout: MyHome
 title: home
 sidebar: false
+header: false
 # hero:
 #   name: 'Blog'
 #   text: "Ivy's personal website"
 #   tagline: My great project tagline
-# image:
-#   src: /logo.png
+image:
+  src: /logo.png
 # actions:
 #   - theme: brand
 #     text: Markdown Examples

@@ -21,8 +21,8 @@ footer {
   font-size: 12px;
   text-align: center;
   width: 100%;
-  bottom: 0px;
-  position: absolute;
+  // bottom: 0px;
+  // position: absolute;
   padding: 6px 0;
   background: var(--vp-c-bg);
   color: var(--vp-c-text);

@@ -1,12 +1,8 @@
 <template>
-  <div>article</div>
+  <div>
+    <div>将自己学习的内容记录下来</div>
+    <small>共勉</small>
+  </div>
 </template>
 
-<style scoped>
-.VPNav {
-  background: red;
-}
-body {
-  background: #f5f5f5;
-}
-</style>
+<style scoped></style>
