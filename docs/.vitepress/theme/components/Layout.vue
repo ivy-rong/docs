@@ -4,13 +4,15 @@ const { Layout } = DefaultTheme
 
 import Footer from './Footer.vue'
 import MyHome from './MyHome.vue'
+import Page from './Page.vue'
 </script>
 
 <template>
   <Layout>
-    <!-- Home slot-->
-    <!-- <template #home-hero-before><MyHome /> </template>
-    <template #home-features-after> <div>13123</div></template> -->
+    <div></div>
+    <!-- Home slot -->
+    <template #home-hero-before><MyHome /></template>
+    <template #home-hero-after><Page /></template>
   </Layout>
   <Footer />
 </template>

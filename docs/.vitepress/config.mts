@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { getPosts, getPostLength } from './theme/serverUtils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,11 +24,14 @@ export default defineConfig({
       { text: 'link', link: '/link' }
     ],
     aside: 'left',
-    outlineTitle: 'In hac pagina',
+    outlineTitle: 'content',
     // footer: {
     //   message: 'Released under the MIT License.',
     //   copyright: 'Copyright © 2023-present Ivy'
     // },
+    posts: await getPosts(),
+    pageSize: 6,
+    postLength: await getPostLength(),
     sidebar: [
       {
         text: 'articles',
@@ -62,5 +66,11 @@ export default defineConfig({
     // },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/Upwards-rwr/blog' }]
+  },
+  markdown: {
+    //代码块启用行号
+    lineNumbers: true
+    //目录
+    // toc: { includeLevel: [1, 2] }
   }
 })
